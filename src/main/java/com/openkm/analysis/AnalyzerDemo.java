@@ -34,13 +34,13 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 
 import com.openkm.core.Config;
-
+ 
 /**
  * @author pavila
  * 
  */
 public class AnalyzerDemo {
-	private static String[] strings = { "专项信息管理" };
+	private static String[] strings = { "专项信息管理" };   
 	
 	private static Analyzer[] analyzers = {
 		new SimpleAnalyzer(Config.LUCENE_VERSION),
@@ -55,9 +55,9 @@ public class AnalyzerDemo {
 			for (Analyzer analyzer : analyzers) {
 				analyze(string, analyzer);
 			}
-		}
+		} 
 	}
-	
+	   
 	/**
 	 * Analyze and display tokens
 	 */

@@ -431,7 +431,7 @@ public class Config {
 	
 	// Hibernate
 	public static String HIBERNATE_DIALECT = "org.hibernate.dialect.HSQLDialect";
-	public static String HIBERNATE_DATASOURCE = JNDI_BASE + "jdbc/OpenKMDS";
+	public static String HIBERNATE_DATASOURCE = JNDI_BASE + "jdbc/iWisdomDS";
 	public static String HIBERNATE_HBM2DDL = "create";
 	public static String HIBERNATE_SHOW_SQL = "false";
 	public static String HIBERNATE_STATISTICS = "false";
