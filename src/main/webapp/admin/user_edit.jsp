@@ -24,7 +24,7 @@
 	   	});
 	});
   </script>
-  <title>User edit</title>
+  <title>编辑用户</title>
 </head>
 <body>
   <c:set var="isAdmin"><%=BaseServlet.isAdmin(request)%></c:set>
@@ -32,13 +32,13 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="Auth">User list</a>
+          <a href="Auth">用户列表</a>
         </li>
         <li class="path">
           <c:choose>
-            <c:when test="${action == 'userCreate'}">Create user</c:when>
-            <c:when test="${action == 'userEdit'}">Edit user</c:when>
-            <c:when test="${action == 'userDelete'}">Delete user</c:when>
+            <c:when test="${action == 'userCreate'}">创建用户</c:when>
+            <c:when test="${action == 'userEdit'}">编辑用户</c:when>
+            <c:when test="${action == 'userDelete'}">删除用户</c:when>
           </c:choose>
         </li>
       </ul>
@@ -48,7 +48,7 @@
         <input type="hidden" name="persist" value="${persist}"/>
         <table class="form" width="372px">
           <tr>
-            <td>Id</td>
+            <td>登录名</td>
             <td width="100%">
               <c:choose>
                 <c:when test="${action != 'userCreate'}">
@@ -61,7 +61,7 @@
             </td>
           </tr>
           <tr>
-            <td>Password</td>
+            <td>密码</td>
             <td>
               <c:choose>
                 <c:when test="${action == 'userCreate'}">
@@ -74,19 +74,19 @@
             </td>
           </tr>
           <tr>
-            <td nowrap="nowrap">Confirm password</td>
+            <td nowrap="nowrap">确认密码</td>
             <td><input class=":same_as;usr_password :only_on_blur" type="password" value="" autocomplete="off"/></td>
           </tr>
           <tr>
-            <td>Name</td>
+            <td>用户名</td>
             <td><input class="" name="usr_name" value="${usr.name}"/></td>
           </tr>
           <tr>
-            <td>Mail</td>
+            <td>邮件地址</td>
             <td><input class=":email :required :only_on_blur" name="usr_email" value="${usr.email}"/></td>
           </tr>
           <tr>
-            <td>Active</td>
+            <td>是否启用</td>
             <td>
               <c:choose>
                 <c:when test="${usr.active}">
@@ -99,7 +99,7 @@
             </td>
           </tr>
           <tr>
-            <td>Roles</td>
+            <td>权限组</td>
             <td>
               <select multiple="multiple" name="usr_roles" size="10">
                 <c:forEach var="role" items="${roles}">
@@ -117,8 +117,9 @@
           </tr>
           <tr>
             <td colspan="2" align="right">
-              <input type="button" onclick="javascript:window.history.back()" value="Cancel"/>
-              <input type="submit" value="Send"/>
+              <input type="submit" value="确定"/>
+              <input type="button" onclick="javascript:window.history.back()" value="取消"/>
+              
             </td>
           </tr>
         </table>

@@ -41,16 +41,16 @@
       </c:url>
       <ul id="breadcrumb">
         <li class="path">
-          <a href="Auth">User list</a>
+          <a href="Auth">用户列表</a>
         </li>
         <li class="action">
-          <a href="Auth?action=roleList">Role list</a>
+          <a href="Auth?action=roleList">权限列表</a>
         </li>
         <li class="action">
-          <a href="${messageList}">Message queue</a>
+          <a href="${messageList}">消息队列</a>
         </li>
         <li class="action">
-          <a href="LoggedUsers">Logged users</a>
+          <a href="LoggedUsers">已登录用户</a>
         </li>
       </ul>
       <br/>
@@ -60,7 +60,7 @@
       <form action="${urlUserList}">
         <table class="form">
           <tr>
-            <td>Role</td>
+            <td>权限组</td>
             <td>
               <select name="roleFilter">
                 <option value=""></option>
@@ -79,7 +79,7 @@
           </tr>
           <tr>
             <td colspan="2" align="right">
-              <input type="submit" value="Seach"/>
+              <input type="submit" value="查询"/>
             </td>
           </tr>
         </table>
@@ -92,7 +92,7 @@
       <table class="results" width="80%">
         <thead>
           <tr>
-            <th>#</th><th>Id</th><th>Name</th><th>Mail</th><th>Roles</th><th>Profile</th><th width="25px">Active</th><th width="25px">Chat</th>
+            <th>#</th><th>登录名</th><th>用户名</th><th>邮箱地址</th><th>权限组</th><th>描述</th><th width="30px">启用</th><th width="30px">聊天</th>
             <th width="130px">
               <c:url value="Auth" var="urlCreate">
                 <c:param name="action" value="userCreate"/>
