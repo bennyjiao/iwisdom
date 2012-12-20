@@ -127,7 +127,7 @@
         
     </security:http>
     
-    <jee:jndi-lookup id="dataSource" jndi-name="jdbc/OpenKMDS" resource-ref="true" />
+    <jee:jndi-lookup id="dataSource" jndi-name="jdbc/iWisdomDS" resource-ref="true" />
     
     <!-- Security configuration moved to $CATALINA_HOME/OpenKM.xml -->
     <!-- WINFIX

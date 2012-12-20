@@ -23,7 +23,7 @@
     <!-- <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property> -->
 
     <!-- DataSource properties (begin) -->
-    <property name="hibernate.connection.datasource">java:/jdbc/OpenKMDS</property>
+    <property name="hibernate.connection.datasource">java:/jdbc/iWisdomDS</property>
     <property name="hibernate.hbm2ddl.auto">create</property>
     <!-- DataSource properties (end) -->
 
