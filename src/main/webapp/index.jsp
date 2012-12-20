@@ -26,6 +26,6 @@
 		}
 	}
 	
-	// Go to party
+	// Go to partysafdasfasfd矫健吃的是用
 	response.sendRedirect(url);
 %>
