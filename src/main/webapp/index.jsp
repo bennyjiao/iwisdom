@@ -26,6 +26,6 @@
 		}
 	}
 	
-	// Go to partysafdasfasfd矫健吃的是用
+	// Go to partysafdasfasfd
 	response.sendRedirect(url);
 %>
