@@ -25,6 +25,6 @@
 			url += "?lang=" + Config.DEFAULT_LANG;
 		}
 	}
-	
+	//nick111
 	response.sendRedirect(url);
 %>
