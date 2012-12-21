@@ -3,7 +3,7 @@
   <legend>Tab</legend>
   <table>
     <tr>
-      <td>Desktop</td>
+      <td>公共桌面</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.desktopVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Search</td>
+      <td>搜索</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.searchVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Dashboard</td>
+      <td>个人仪表盘</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.dashboardVisible}">
@@ -41,8 +41,8 @@
         </c:choose>
       </td>
     </tr>
-    <tr>
-      <td>Administration</td>
+    <tr> 
+      <td>系统管理</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.administrationVisible}">
