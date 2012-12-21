@@ -28,3 +28,4 @@
 	//nick111
 	response.sendRedirect(url);
 %>
+testlihao
