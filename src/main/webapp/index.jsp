@@ -26,14 +26,5 @@
 		}
 	}
 	
-	// Go to partysafdasfasfd
 	response.sendRedirect(url);
-	//矫健测试
-	//nick6610
-	//1111
-	// 矫健2
-	//你才k
-	//矫健3
-	//nick4
-	//矫健4
 %>
