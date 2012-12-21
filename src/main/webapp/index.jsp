@@ -26,5 +26,7 @@
 		}
 	}
 	//nick111
+	//nick6610
+	//nick66101
 	response.sendRedirect(url);
 %>
