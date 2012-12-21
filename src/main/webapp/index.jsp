@@ -27,6 +27,8 @@
 	}
 	//nick111
 	//1111112
+	//nick6610
+	//nick66101
 	response.sendRedirect(url);
 %>
 testlihao
