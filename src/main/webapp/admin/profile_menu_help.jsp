@@ -3,7 +3,7 @@
   <legend>Menu help</legend>
   <table>
     <tr>
-      <td>Documentation</td>
+      <td>文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfHelp.documentationVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Bug tracking</td>
+      <td>BUG提交</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfHelp.bugTrackingVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Support</td>
+      <td>技术支持</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfHelp.supportVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>Forum</td>
+      <td>论坛</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfHelp.forumVisible}">
@@ -55,7 +55,7 @@
       </td>
     </tr>
     <tr>
-      <td>Changelog</td>
+      <td>版本说明</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfHelp.changelogVisible}">
@@ -68,7 +68,7 @@
       </td>
     </tr>
     <tr>
-      <td>Web site</td>
+      <td>项目网站</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfHelp.webSiteVisible}">
@@ -81,7 +81,7 @@
       </td>
     </tr>
     <tr>
-      <td>About</td>
+      <td>关于</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfHelp.aboutVisible}">

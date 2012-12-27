@@ -3,7 +3,7 @@
   <legend>Menu</legend>
   <table>
     <tr>
-      <td>File</td>
+      <td>文件</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.fileVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Edit</td>
+      <td>编辑</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.editVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Tools</td>
+      <td>工具</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.toolsVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>Bookmarks</td>
+      <td>书签</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.bookmarksVisible}">
@@ -55,7 +55,7 @@
       </td>
     </tr>
     <tr>
-      <td>Templates</td>
+      <td>模板</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.templatesVisible}">
@@ -68,7 +68,7 @@
       </td>
     </tr>
     <tr>
-      <td>Help</td>
+      <td>帮助</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.helpVisible}">

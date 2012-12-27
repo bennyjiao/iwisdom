@@ -3,11 +3,11 @@
   <legend>General</legend>
   <table>
     <tr>
-      <td>Name</td>
+      <td>名称</td>
       <td><input class=":required :only_on_blur" name="prf_name" value="${prf.name}"/></td>
     </tr>
     <tr>
-      <td>Active</td>
+      <td>是否启用</td>
       <td>
         <c:choose>
           <c:when test="${prf.active}">

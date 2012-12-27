@@ -3,7 +3,7 @@
   <legend>Menu bookmark</legend>
   <table>
     <tr>
-      <td>Manage bookmarks</td>
+      <td>管理标签</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfBookmark.manageBookmarksVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add bookmark</td>
+      <td>添加标签</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfBookmark.addBookmarkVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Set home</td>
+      <td>设为主目录</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfBookmark.setHomeVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>Go home</td>
+      <td>进入主目录</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfBookmark.goHomeVisible}">

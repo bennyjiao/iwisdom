@@ -6,7 +6,7 @@
 <div style="text-align: center">
   <ul style="display: inline-block;">
     <li>
-      <a target="frame" href="home.jsp" title="Home">
+      <a target="frame" href="home.jsp" title="首页">
         <img src="img/toolbar/home.png">
       </a>
     </li>

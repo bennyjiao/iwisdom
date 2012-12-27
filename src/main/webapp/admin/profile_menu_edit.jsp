@@ -3,7 +3,7 @@
   <legend>Menu edit</legend>
   <table>
     <tr>
-      <td>Lock</td>
+      <td>锁定</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.lockVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Unlock</td>
+      <td>解锁</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.unlockVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Check-in</td>
+      <td>签入</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.checkInVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>Check-out</td>
+      <td>签出</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.checkOutVisible}">
@@ -55,7 +55,7 @@
       </td>
     </tr>
     <tr>
-      <td>Cancel check-out</td>
+      <td>撤销签出</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.cancelCheckOutVisible}">
@@ -68,7 +68,7 @@
       </td>
     </tr>
     <tr>
-      <td>Delete</td>
+      <td>删除</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.deleteVisible}">
@@ -81,7 +81,7 @@
       </td>
     </tr>
     <tr>
-      <td>Rename</td>
+      <td>重命名</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.renameVisible}">
@@ -94,7 +94,7 @@
       </td>
     </tr>
     <tr>
-      <td>Copy</td>
+      <td>复制</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.copyVisible}">
@@ -107,7 +107,7 @@
       </td>
     </tr>
     <tr>
-      <td>Move</td>
+      <td>移动</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.moveVisible}">
@@ -120,7 +120,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add subscription</td>
+      <td>添加注释</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.addSubscriptionVisible}">
@@ -133,7 +133,7 @@
       </td>
     </tr>
     <tr>
-      <td>Remove subscription</td>
+      <td>删除注释</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.removeSubscriptionVisible}">
@@ -146,7 +146,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add property group</td>
+      <td>添加属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.addPropertyGroupVisible}">
@@ -159,7 +159,7 @@
       </td>
     </tr>
     <tr>
-      <td>Remove property group</td>
+      <td>删除属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.removePropertyGroupVisible}">
@@ -172,7 +172,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add note</td>
+      <td>添加备注</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.addNoteVisible}">
@@ -185,7 +185,7 @@
       </td>
     </tr>
     <tr>
-      <td>Remove note</td>
+      <td>删除备注</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.removeNoteVisible}">
@@ -198,7 +198,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add category</td>
+      <td>添加分类</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.addCategoryVisible}">
@@ -211,7 +211,7 @@
       </td>
     </tr>
     <tr>
-      <td>Remove category</td>
+      <td>删除分类</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.removeCategoryVisible}">
@@ -224,7 +224,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add keyword</td>
+      <td>添加关键字</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.addKeywordVisible}">
@@ -237,7 +237,7 @@
       </td>
     </tr>
     <tr>
-      <td>Remove keyword</td>
+      <td>删除关键字</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.removeKeywordVisible}">
@@ -250,7 +250,7 @@
       </td>
     </tr>
     <tr>
-      <td>Merge PDF</td>
+      <td>合并为PDF</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.mergePdfVisible}">

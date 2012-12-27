@@ -3,7 +3,7 @@
   <legend>Stacks</legend>
   <table>
     <tr>
-      <td>Taxonomy</td>
+      <td>公共文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.taxonomyVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Categories</td>
+      <td>自定义分类</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.categoriesVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Thesaurus</td>
+      <td>知识库</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.thesaurusVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>Templates</td>
+      <td>模板</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.templatesVisible}">
@@ -55,7 +55,7 @@
       </td>
     </tr>
     <tr>
-      <td>Personal</td>
+      <td>个人文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.personalVisible}">
@@ -68,7 +68,7 @@
       </td>
     </tr>
     <tr>
-      <td>Mail</td>
+      <td>邮件</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.mailVisible}">
@@ -81,7 +81,7 @@
       </td>
     </tr>
     <tr>
-      <td>Trash</td>
+      <td>回收站</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.trashVisible}">

@@ -4,11 +4,11 @@
   <legend>Misc</legend>
   <table>
     <tr>
-      <td>Quota limit (MB)</td>
+      <td>配额限制 (MB)</td>
       <td><input class=":integer :only_on_blur" name="prf_misc_user_quota" value="${prf.prfMisc.userQuota}" size="10"/></td>
     </tr>
     <tr>
-      <td>Advanced filters</td>
+      <td>高级过滤器</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMisc.advancedFilters}">
@@ -21,7 +21,7 @@
       </td>
     </tr>
     <tr>
-      <td>Web skin</td>
+      <td>网站皮肤</td>
       <td>
         <select name="prf_misc_web_skin">
           <c:choose>
@@ -52,7 +52,7 @@
       </td>
     </tr>
     <tr>
-      <td>Print preview</td>
+      <td>打印预览</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMisc.printPreview}">
@@ -65,7 +65,7 @@
       </td>
     </tr>
     <tr>
-      <td>Keywords enabled</td>
+      <td>启用关键字</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMisc.keywordsEnabled}">
@@ -78,7 +78,7 @@
       </td>
     </tr>
     <tr>
-      <td>Upload notify users</td>
+      <td>上传通知用户</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMisc.uploadNotifyUsers}">
@@ -91,7 +91,7 @@
       </td>
     </tr>
     <tr>
-      <td>Extensions</td>
+      <td>扩展</td>
       <td>
         <select multiple="multiple" name="prf_misc_extensions" size="4">
           <c:forEach var="ext" items="${exts}">
@@ -108,7 +108,7 @@
       </td>
     </tr>
     <tr>
-      <td>Reports</td>
+      <td>报告</td>
       <td>
         <select multiple="multiple" name="prf_misc_reports" size="4">
           <c:forEach var="rep" items="${reps}">
@@ -125,7 +125,7 @@
       </td>
     </tr>
     <tr>
-      <td>Workflows</td>
+      <td>工作流</td>
       <td>
         <select multiple="multiple" name="prf_misc_workflows" size="4">
           <c:forEach var="wf" items="${wflows}">

@@ -3,7 +3,7 @@
   <legend>Chat</legend>
   <table>
     <tr>
-      <td>Enabled</td>
+      <td>启用</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfChat.chatEnabled}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Auto login</td>
+      <td>自动登录</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfChat.autoLoginEnabled}">
