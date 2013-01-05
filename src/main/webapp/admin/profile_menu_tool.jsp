@@ -3,7 +3,7 @@
   <legend>Menu tool</legend>
   <table>
     <tr>
-      <td>Languages</td>
+      <td>语言</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.languagesVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Skin</td>
+      <td>皮肤</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.skinVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Debug</td>
+      <td>调试</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.debugVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>Administration</td>
+      <td>管理</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.administrationVisible}">
@@ -55,7 +55,7 @@
       </td>
     </tr>
     <tr>
-      <td>Preferences</td>
+      <td>首选项</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.preferencesVisible}">

@@ -4,7 +4,7 @@
   <legend>Toolbar</legend>
   <table>
     <tr>
-      <td>Create folder</td>
+      <td>创建文件夹</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.createFolderVisible}">
@@ -17,7 +17,7 @@
       </td>
     </tr>
     <tr>
-      <td>Find folders</td>
+      <td>查找文件夹</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.findFolderVisible}">
@@ -30,7 +30,7 @@
       </td>
     </tr>
     <tr>
-      <td>Find documents</td>
+      <td>查找文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.findDocumentVisible}">
@@ -43,7 +43,7 @@
       </td>
     </tr>
     <tr>
-      <td>Download</td>
+      <td>下载</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.downloadVisible}">
@@ -56,7 +56,7 @@
       </td>
     </tr>
     <tr>
-      <td>Download PDF</td>
+      <td>下载为PDF</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.downloadPdfVisible}">
@@ -69,7 +69,7 @@
       </td>
     </tr>
     <tr>
-      <td>Lock</td>
+      <td>锁定</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.lockVisible}">
@@ -82,7 +82,7 @@
       </td>
     </tr>
     <tr>
-      <td>Unlock</td>
+      <td>取消锁定</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.unlockVisible}">
@@ -95,7 +95,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add document</td>
+      <td>添加文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.addDocumentVisible}">
@@ -108,7 +108,7 @@
       </td>
     </tr>
     <tr>
-      <td>Checkout</td>
+      <td>签出</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.checkoutVisible}">
@@ -121,7 +121,7 @@
       </td>
     </tr>
     <tr>
-      <td>Checkin</td>
+      <td>签入</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.checkinVisible}">
@@ -134,7 +134,7 @@
       </td>
     </tr>
     <tr>
-      <td>Cancel checkout</td>
+      <td>撤销签出</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.cancelCheckoutVisible}">
@@ -147,7 +147,7 @@
       </td>
     </tr>
     <tr>
-      <td>Delete</td>
+      <td>删除</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.deleteVisible}">
@@ -160,7 +160,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add property group</td>
+      <td>添加属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.addPropertyGroupVisible}">
@@ -173,7 +173,7 @@
       </td>
     </tr>
     <tr>
-      <td>Remove property group</td>
+      <td>删除属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.removePropertyGroupVisible}">
@@ -186,7 +186,7 @@
       </td>
     </tr>
     <tr>
-      <td>Start workflow</td>
+      <td>启用工作流</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.startWorkflowVisible}">
@@ -199,7 +199,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add subscription</td>
+      <td>添加注解</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.addSubscriptionVisible}">
@@ -212,7 +212,7 @@
       </td>
     </tr>
     <tr>
-      <td>Remove subscription</td>
+      <td>删除注解</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.removeSubscriptionVisible}">
@@ -225,7 +225,7 @@
       </td>
     </tr>
     <tr>
-      <td>Refresh</td>
+      <td>刷新</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.refreshVisible}">
@@ -238,7 +238,7 @@
       </td>
     </tr>
     <tr>
-      <td>Home</td>
+      <td>主目录</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.homeVisible}">
@@ -251,7 +251,7 @@
       </td>
     </tr>
     <tr>
-      <td>Scanner</td>
+      <td>扫描仪</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.scannerVisible}">
@@ -264,7 +264,7 @@
       </td>
     </tr>
     <tr>
-      <td>Uploader</td>
+      <td>文件上传工具</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.uploaderVisible}">

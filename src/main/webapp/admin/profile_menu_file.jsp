@@ -3,7 +3,7 @@
   <legend>Menu file</legend>
   <table>
     <tr>
-      <td>Create folder</td>
+      <td>创建文件夹</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.createFolderVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Find folders</td>
+      <td>查找文件夹</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.findFolderVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Find documents</td>
+      <td>查找文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.findDocumentVisible}">
@@ -68,7 +68,7 @@
       </td>
     </tr>
     <tr>
-      <td>Download</td>
+      <td>下载</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.downloadVisible}">
@@ -81,7 +81,7 @@
       </td>
     </tr>
     <tr>
-      <td>Download PDF</td>
+      <td>下载为PDF</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.downloadPdfVisible}">
@@ -94,7 +94,7 @@
       </td>
     </tr>
     <tr>
-      <td>Add document</td>
+      <td>新建文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.addDocumentVisible}">
@@ -107,7 +107,7 @@
       </td>
     </tr>
     <tr>
-      <td>Purge</td>
+      <td>清除</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.purgeVisible}">
@@ -120,7 +120,7 @@
       </td>
     </tr>
     <tr>
-      <td>Purge trash</td>
+      <td>清除回收站</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.purgeTrashVisible}">
@@ -133,7 +133,7 @@
       </td>
     </tr>
     <tr>
-      <td>Restore</td>
+      <td>恢复</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.restoreVisible}">
@@ -146,7 +146,7 @@
       </td>
     </tr>
     <tr>
-      <td>Start workflow</td>
+      <td>启用工作流</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.startWorkflowVisible}">
@@ -159,7 +159,7 @@
       </td>
     </tr>
     <tr>
-      <td>Refresh</td>
+      <td>刷新</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.refreshVisible}">
@@ -172,7 +172,7 @@
       </td>
     </tr>
     <tr>
-      <td>Scanner</td>
+      <td>扫描仪</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.scannerVisible}">
@@ -185,7 +185,7 @@
       </td>
     </tr>
     <tr>
-      <td>Uploader</td>
+      <td>文件上传工具</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.uploaderVisible}">
@@ -198,7 +198,7 @@
       </td>
     </tr>
     <tr>
-      <td>Export</td>
+      <td>导出ZIP</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.exportVisible}">
@@ -211,7 +211,7 @@
       </td>
     </tr>
     <tr>
-      <td>Create from template</td>
+      <td>按照模板创建</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.createFromTemplateVisible}">
@@ -224,7 +224,7 @@
       </td>
     </tr>
     <tr>
-      <td>Send document link</td>
+      <td>发送文档链接</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.sendDocumentLinkVisible}">
@@ -237,7 +237,7 @@
       </td>
     </tr>
     <tr>
-      <td>Send document attachment</td>
+      <td>以附件形式发送文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.sendDocumentAttachmentVisible}">

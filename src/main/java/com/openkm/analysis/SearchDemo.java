@@ -77,9 +77,9 @@ public class SearchDemo {
 			System.out.println("** Analyzer: " + analyzer.getClass().getName() + " **");
 			Directory index = new RAMDirectory();
 			
-			for (String str : strings) {	
-				add(index, analyzer, str);
-			}
+//			for (String str : strings) {	
+//				add(index, analyzer, str);
+//			}
 			
 			search(index, analyzer, SEARCH_TERM);
 			System.out.println();

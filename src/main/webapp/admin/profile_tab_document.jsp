@@ -3,7 +3,7 @@
   <legend>Tab document</legend>
   <table>
     <tr>
-      <td>Properties</td>
+      <td>属性</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfDocument.propertiesVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Security</td>
+      <td>安全</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfDocument.securityVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Notes</td>
+      <td>备注</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfDocument.notesVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>Versions</td>
+      <td>版本</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfDocument.versionsVisible}">
@@ -55,7 +55,7 @@
       </td>
     </tr>
     <tr>
-      <td>Version download</td>
+      <td>版本下载</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfDocument.versionDownloadVisible}">
@@ -68,7 +68,7 @@
       </td>
     </tr>
     <tr>
-      <td>Preview</td>
+      <td>预览</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfDocument.previewVisible}">
@@ -81,7 +81,7 @@
       </td>
     </tr>
     <tr>
-      <td>Property groups</td>
+      <td>属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfDocument.propertyGroupsVisible}">

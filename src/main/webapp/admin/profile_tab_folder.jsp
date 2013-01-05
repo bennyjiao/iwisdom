@@ -3,7 +3,7 @@
   <legend>Tab folder</legend>
   <table>
     <tr>
-      <td>Properties</td>
+      <td>属性</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfFolder.propertiesVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Security</td>
+      <td>安全</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfFolder.securityVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Notes</td>
+      <td>备注</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfFolder.notesVisible}">
