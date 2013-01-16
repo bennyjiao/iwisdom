@@ -63,7 +63,7 @@
     <poi.version>3.8</poi.version>
     
     <!-- GXT -->
-    <gxt.version>2.0.1</gxt.version>
+    <gxt.version>3.0.1</gxt.version>
     
     <!-- Milton WebDAV -->
     <milton.version>1.8.1.3</milton.version>
@@ -730,11 +730,11 @@
 	
 	<!-- gxt -->
 	<dependency>
-     <groupId>com.extjs</groupId>
-     <artifactId>gxt</artifactId>
-     <version>${gxt.version}</version>
-     <scope>provided</scope>
-    </dependency>	
+		<groupId>com.sencha.gxt</groupId>
+		<artifactId>gxt</artifactId>
+		<version>3.0.1</version>
+	</dependency>	
+    
   </dependencies>
   
   <build>
