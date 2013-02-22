@@ -1,9 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Dashboard</legend>
+  <legend>自定义面板</legend>
   <table>
     <tr>
-      <td>User</td>
+      <td>用户</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfDashboard.userVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>Mail</td>
+      <td>邮件</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfDashboard.mailVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>News</td>
+      <td>最新</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfDashboard.newsVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>General</td>
+      <td>常用</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfDashboard.generalVisible}">
@@ -55,7 +55,7 @@
       </td>
     </tr>
     <tr>
-      <td>Workflow</td>
+      <td>工作流</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfDashboard.workflowVisible}">
@@ -68,7 +68,7 @@
       </td>
     </tr>
     <tr>
-      <td>Keywords</td>
+      <td>关键字</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfDashboard.keywordsVisible}">

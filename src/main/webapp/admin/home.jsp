@@ -18,25 +18,17 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="home.jsp">OpenKM Administration</a>
+          <a href="home.jsp">iwisdom 管理控制台</a>
         </li>
       </ul>
       <br/>
       <table width="234px" class="form" style="margin-top: 25px">
-        <tr><td><b>OpenKM - Knowledge Management</b></td></tr>
-        <tr><td nowrap="nowrap">Version: <%=WarUtils.getAppVersion() %></td></tr>
-        <tr><td>&nbsp;</td></tr>
-        <tr><td>&copy; 2006-2012 OpenKM</td></tr>
-        <tr><td>&nbsp;</td></tr>
-        <tr><td><b>Support</b></td></tr>
-        <tr><td><a target="_blank" href="http://forum.openkm.com/">http://forum.openkm.com</a></td></tr>
-        <tr><td>&nbsp;</td></tr>
-        <tr><td><b>Installation ID</b></td></tr>
-        <tr><td nowrap="nowrap"><%=OKMRepository.getInstance().getRepositoryUuid(null)%></td></tr>
+        <tr><td><b>欢迎使用iwisdom管理控制台</b></td></tr>
+        
       </table>
     </c:when>
     <c:otherwise>
-      <div class="error"><h3>Only admin users allowed</h3></div>
+      <div class="error"><h3>没有管理员权限</h3></div>
     </c:otherwise>
   </c:choose>
 </body>

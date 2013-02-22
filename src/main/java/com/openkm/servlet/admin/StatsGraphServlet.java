@@ -97,14 +97,15 @@ public class StatsGraphServlet extends BaseServlet {
 				
 				if (chart != null) {
 					// Customize title font
-					chart.getTitle().setFont(new Font("Tahoma", Font.BOLD, 16));
-					
+					//chart.getTitle().setFont(new Font("Tahoma", Font.BOLD, 16));
+					 chart.getTitle().setFont(new Font("宋体", Font.BOLD,12));
+					 chart.getLegend().setItemFont(new Font("宋体", Font.PLAIN, 12));  
 					// Match body {	background-color:#F6F6EE; }
 					chart.setBackgroundPaint(new Color(246, 246, 238));
 					
 					// Customize no data
 					PiePlot plot = (PiePlot) chart.getPlot();
-					plot.setNoDataMessage("No data to display");
+					plot.setNoDataMessage("暂无查询数据，请刷新后再试");
 					
 					// Customize labels
 					plot.setLabelGenerator(null);
@@ -113,7 +114,8 @@ public class StatsGraphServlet extends BaseServlet {
 					LegendTitle legend = new LegendTitle(plot, new ColumnArrangement(), new ColumnArrangement());
 					legend.setPosition(RectangleEdge.BOTTOM);
 					legend.setFrame(BlockBorder.NONE);
-					legend.setItemFont(new Font("Tahoma", Font.PLAIN, 12));
+					//legend.setItemFont(new Font("Tahoma", Font.PLAIN, 12));
+					plot.setLabelFont(new Font("宋体",Font.BOLD,20));
 					chart.removeLegend();
 					chart.addLegend(legend);
 					
@@ -149,15 +151,15 @@ public class StatsGraphServlet extends BaseServlet {
 		long total = df.getTotalSpace();
 		long usable = df.getUsableSpace();
 		long used = total - usable;
-		String title = "Disk: " + FormatUtil.formatSize(total);
+		String title = "存储空间: " + FormatUtil.formatSize(total);
 		
 		log.debug("Total space: {}", FormatUtil.formatSize(total));
 		log.debug("Usable space: {}", FormatUtil.formatSize(usable));
 		log.debug("Used space: {}", FormatUtil.formatSize(used));
 		
 		DefaultPieDataset dataset = new DefaultPieDataset();
-		dataset.setValue("Available (" + FormatUtil.formatSize(usable) + ")", usable * 100 / total);
-		dataset.setValue("Used (" + FormatUtil.formatSize(used) + ")", used * 100 / total);
+		dataset.setValue("空闲(" + FormatUtil.formatSize(usable) + ")", usable * 100 / total);
+		dataset.setValue("已用 (" + FormatUtil.formatSize(used) + ")", used * 100 / total);
 
 		return ChartFactory.createPieChart(title, dataset, true, false, false);
 	}
@@ -173,7 +175,7 @@ public class StatsGraphServlet extends BaseServlet {
 		long free = runtime.freeMemory(); // amount of free memory in the JVM
 		long used = max - available;
 		long total = free + used;
-		String title = "JVM memory: " + FormatUtil.formatSize(total);
+		String title = "JVM虚拟机内存: " + FormatUtil.formatSize(total);
 		
 		log.debug("JVM maximun memory: {}", FormatUtil.formatSize(max));
 		log.debug("JVM available memory: {}", FormatUtil.formatSize(available));
@@ -182,8 +184,8 @@ public class StatsGraphServlet extends BaseServlet {
 		log.debug("JVM total memory: {}", FormatUtil.formatSize(total));
 		
 		DefaultPieDataset dataset = new DefaultPieDataset();
-		dataset.setValue("Available (" + FormatUtil.formatSize(free) + ")", free * 100 / total);
-		dataset.setValue("Used (" + FormatUtil.formatSize(used) + ")", used * 100 / total);
+		dataset.setValue("空闲 (" + FormatUtil.formatSize(free) + ")", free * 100 / total);
+		dataset.setValue("已用 (" + FormatUtil.formatSize(used) + ")", used * 100 / total);
 
 		return ChartFactory.createPieChart(title, dataset, true, false, false);
 	}
@@ -236,17 +238,17 @@ public class StatsGraphServlet extends BaseServlet {
 			StatsInfo si = RepositoryInfo.getDocumentsByContext();
 			percents = si.getPercents();
 			sizes = si.getSizes();
-			title = "Documents by context";
+			title = "全局文档数量";
 		} else if (DOCUMENTS_SIZE.equals(type)) {
 			StatsInfo si = RepositoryInfo.getDocumentsSizeByContext();
 			percents = si.getPercents();
 			sizes = si.getSizes();
-			title = "Documents size by context";
+			title = "全局文档占用空间";
 		} else if (FOLDERS.equals(type)) {
 			StatsInfo si = RepositoryInfo.getFoldersByContext();
 			percents = si.getPercents();
 			sizes = si.getSizes();
-			title = "Folders by context";
+			title = "全局文件夹数量";
 		}
 		
 		if (title != null && sizes.length > 0 && percents.length > 0) {
@@ -255,10 +257,10 @@ public class StatsGraphServlet extends BaseServlet {
 			String templateSize = DOCUMENTS_SIZE.equals(type) ? FormatUtil.formatSize(sizes[2]) : Long.toString(sizes[2]);
 			String trashSize = DOCUMENTS_SIZE.equals(type) ? FormatUtil.formatSize(sizes[3]) : Long.toString(sizes[3]);
 			
-			dataset.setValue("Taxonomy (" + taxonomySize + ")", percents[0]);
-			dataset.setValue("Personal (" + personalSize + ")", percents[1]);
-			dataset.setValue("Template (" + templateSize + ")", percents[2]);
-			dataset.setValue("Trash (" + trashSize + ")", percents[3]);
+			dataset.setValue("公共空间 (" + taxonomySize + ")", percents[0]);
+			dataset.setValue("个人空间 (" + personalSize + ")", percents[1]);
+			dataset.setValue("模板空间 (" + templateSize + ")", percents[2]);
+			dataset.setValue("回收站 (" + trashSize + ")", percents[3]);
 		}
 		
 		return ChartFactory.createPieChart(title, dataset, true, false, false);

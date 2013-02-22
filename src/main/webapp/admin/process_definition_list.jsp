@@ -28,18 +28,18 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="Workflow?action=processDefinitionList">Process definitions</a>
+          <a href="Workflow?action=processDefinitionList">流程定义</a>
         </li>
         <li class="action">
           <a href="Workflow?action=processDefinitionList">
             <img src="img/action/refresh.png" alt="Refresh" title="Refresh" style="vertical-align: middle;"/>
-            Refresh
+            刷新
           </a>
         </li>
       </ul>
       <br/>
       <table class="results" width="90%">
-        <tr><th>Process ID</th><th>Process Name</th><th>Version</th><th width="50px">Actions</th></tr>
+        <tr><th>流程ID</th><th>流程名称</th><th>Version</th><th width="50px">动作</th></tr>
         <c:forEach var="pd" items="${processDefinitions}" varStatus="row">
           <c:url value="Workflow" var="urlProcessDefinitionView">
             <c:param name="action" value="processDefinitionView"/>

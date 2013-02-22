@@ -27,16 +27,14 @@
   <c:choose>
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
-        <li class="path">
-          <a href="stats.jsp">Statistics</a>
-        </li>
-        <li class="action">
-          <a href="text_extraction_queue.jsp">Text extraction queue</a>
-        </li>
+        <li class="path"> <a href="stats.jsp">系统运行状态</a> </li> 
+        <!-- <li class="action">
+          <a href="text_extraction_queue.jsp">文字显示</a>
+        </li>-->
         <li class="action">
           <a href="StatsGraph?action=refresh">
             <img src="img/action/refresh.png" alt="Refresh" title="Refresh" style="vertical-align: middle;"/>
-            Refresh
+                                          刷新
           </a>
         </li>
       </ul>
@@ -53,7 +51,7 @@
       <%-- <h2>System</h2> --%>
       <table align="center">
         <tr>
-          <td><img src="StatsGraph?t=5"/></td>
+          <!-- <td><img src="StatsGraph?t=5"/></td> -->
           <td><img src="StatsGraph?t=3"/></td>
           <td><img src="StatsGraph?t=4"/></td>
         </tr>

@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Chat</legend>
+  <legend>聊天</legend>
   <table>
     <tr>
       <td>启用</td>

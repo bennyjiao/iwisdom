@@ -8,7 +8,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="Shortcut icon" href="favicon.ico" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <title>User Profiles</title>
+  <title>用户权限</title>
 </head>
 <body>
   <c:set var="isAdmin"><%=BaseServlet.isAdmin(request)%></c:set>
@@ -16,18 +16,18 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="Profile">User profiles</a>
+          <a href="Profile">权限列表</a>
         </li>
       </ul>
       <br/>
       <table class="results" width="50%">
         <tr>
-          <th>Name</th><th width="25px">Active</th>
+          <th>名称</th><th width="30px">状态</th>
           <th width="75px">
             <c:url value="Profile" var="urlCreate">
               <c:param name="action" value="create"/>
             </c:url>
-            <a href="${urlCreate}"><img src="img/action/new.png" alt="New profile" title="New profile"/></a>
+            <a href="${urlCreate}"><img src="img/action/new.png" alt="新建权限" title="新建权限"/></a>
           </th>
         </tr>
         <c:forEach var="prf" items="${userProfiles}" varStatus="row">
