@@ -31,74 +31,42 @@
       preset = locale.getLanguage() + "-" + locale.getCountry();
     }
   %>
-  <title>OpenKM Login</title>
+  <title>iwisdom login</title>
 </head>
 <body onload="document.forms[0].elements[0].focus()">
   <u:constantsMap className="com.openkm.core.Config" var="Config"/>
   <div id="box">
-    <div id="logo"></div>
+    
     <div id="error">
       <c:if test="${not empty param.error}">
         Authentication error
         <c:if test="${Config.PRINCIPAL_ADAPTER == 'com.openkm.principal.DatabasePrincipalAdapter'}">
-          (<a href="password_reset.jsp">Forgot your password?</a>)
+          (<a href="password_reset.jsp">忘记密码?</a>)
         </c:if>
       </c:if>
     </div>
-    <div id="text">
-      <center><img src="<%=request.getContextPath() %>/img/lock.png"/></center>
-      <p>Welcome to OpenKM !</p>
-      <p>Use a valid username and password to access to OpenKM user Desktop.</p>
-    </div>
+  
     <div id="form">
       <form name="loginform" method="post" action="j_spring_security_check" onsubmit="setCookie()">
+       <img src="" alt="logo" width="200" height="50"/><br/><br/>
         <% if (Config.SYSTEM_MAINTENANCE) { %>
           <table border="0" cellpadding="2" cellspacing="0" align="center" class="demo" style="width: 100%">
           <tr><td class="demo_alert">System under maintenance</td></tr>
           </table>
+         
           <input name="j_username" id="j_username" type="hidden" value="<%=Config.SYSTEM_LOGIN_LOWERCASE?Config.ADMIN_USER.toLowerCase():Config.ADMIN_USER%>"/><br/>
         <% } else { %>
-          <label for="j_username">User</label><br/>
+          <label for="j_username">用户名</label>
           <input name="j_username" id="j_username" type="text" <%=Config.SYSTEM_LOGIN_LOWERCASE?"onchange=\"makeLowercase();\"":""%>/><br/><br/>
         <% } %>
-        <label for="j_password">Password</label><br/>
+        <label for="j_password">密　码</label>
         <input name="j_password" id="j_password" type="password"/><br/><br/>
-        <label for="j_language">Language</label><br/>
-        <select name="j_language" id="j_language">
-        <%
-          List<Language> langs = LanguageDAO.findAll();
-          String whole = null;
-          String part = null;
-          
-          // Match whole locale
-          for (Language lang : langs) {
-            String id = lang.getId();
-            
-            if (preset.equalsIgnoreCase(id)) {
-              whole = id;
-            } else if (preset.substring(0, 2).equalsIgnoreCase(id.substring(0, 2))) {
-              part = id;
-            }
-          }
-          
-          // Select selected
-          for (Language lang : langs) {
-            String id = lang.getId();
-            String selected = "";
-            
-            if (whole != null && id.equalsIgnoreCase(whole)) {
-              selected = "selected";
-            } else if (whole == null && part != null && id.equalsIgnoreCase(part)) {
-              selected = "selected";
-            } else if (whole == null && part == null && Language.DEFAULT.equals(id)) {
-              selected = "selected";
-            }
-            
-            out.print("<option "+selected+" value=\""+id+"\">"+lang.getName()+"</option>");
-          }
-        %>
-        </select>
-        <input value="Login" name="submit" type="submit"/><br/>
+        <!-- 多语言选择
+ 
+         -->
+        <input type="hidden" name="j_language" id="j_language" value="zh-CN"></input>
+        <input value="登录" name="submit" type="submit"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input value="重置" type="reset" name="reset" />
       </form>
     </div>
   </div>

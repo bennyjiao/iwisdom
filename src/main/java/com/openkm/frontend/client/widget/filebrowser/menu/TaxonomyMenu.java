@@ -57,6 +57,7 @@ public class TaxonomyMenu extends MenuBase {
 	private MenuItem bookmark;
 	private MenuItem home;
 	private MenuItem export;
+	private MenuItem home1;
 	
 	/**
 	 * Browser menu
@@ -118,6 +119,10 @@ public class TaxonomyMenu extends MenuBase {
 		export = new MenuItem(Util.menuHTML("img/icon/actions/export.gif", Main.i18n("general.menu.file.export")), true, exportToFile);
 		export.addStyleName("okm-MenuItem-strike");
 		dirMenu.addItem(export);
+		
+		home1 = new MenuItem(Util.menuHTML("img/icon/actions/bookmark.gif", Main.i18n("test.string")), true, setHome);
+		home1.addStyleName("okm-MenuItem-strike");
+		dirMenu.addItem(home1);
 		
 		dirMenu.setStyleName("okm-MenuBar");
 		initWidget(dirMenu);

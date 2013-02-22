@@ -1,10 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u" %>
 <fieldset>
-  <legend>File browser</legend>
+  <legend>文件浏览</legend>
   <table>
     <tr>
-      <td>Status</td>
+      <td>状态</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.statusVisible}">
@@ -30,7 +30,7 @@
       </td>
     </tr>
     <tr>
-      <td>Icon</td>
+      <td>图标</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.iconVisible}">
@@ -43,7 +43,7 @@
       </td>
     </tr>
     <tr>
-      <td>Name</td>
+      <td>名称</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.nameVisible}">
@@ -56,7 +56,7 @@
       </td>
     </tr>
     <tr>
-      <td>Size</td>
+      <td>文件大小</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.sizeVisible}">
@@ -69,7 +69,7 @@
       </td>
     </tr>
     <tr>
-      <td>Last modified</td>
+      <td>最后修改</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.lastModifiedVisible}">
@@ -82,7 +82,7 @@
       </td>
     </tr>
     <tr>
-      <td>Author</td>
+      <td>作者</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.authorVisible}">
@@ -95,7 +95,7 @@
       </td>
     </tr>
     <tr>
-      <td>Version</td>
+      <td>版本</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.versionVisible}">

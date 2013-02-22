@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
   <script src="../js/vanadium-min.js" type="text/javascript"></script>
-  <title>User Profile</title>
+  <title>用户权限</title>
 </head>
 <body>
   <c:set var="isAdmin"><%=BaseServlet.isAdmin(request)%></c:set>
@@ -19,14 +19,14 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="Profile">User profiles</a>
+          <a href="Profile">用户权限</a>
         </li>
         <li class="path">
           <c:choose>
-            <c:when test="${action == 'create'}">Create profile</c:when>
-            <c:when test="${action == 'edit'}">Edit profile</c:when>
-            <c:when test="${action == 'delete'}">Delete profile</c:when>
-            <c:when test="${action == 'clone'}">Clone profile</c:when>
+            <c:when test="${action == 'create'}">创建权限</c:when>
+            <c:when test="${action == 'edit'}">编辑权限</c:when>
+            <c:when test="${action == 'delete'}">删除权限</c:when>
+            <c:when test="${action == 'clone'}">复制权限</c:when>
           </c:choose>
         </li>
       </ul>
@@ -98,15 +98,15 @@
           </tr>
           <tr>
             <td colspan="4" align="right">
-              <input type="button" onclick="javascript:window.history.back()" value="Cancel"/>
-              <input type="submit" value="Send"/>
+              <input type="submit" value="确认"/>
+              <input type="button" onclick="javascript:window.history.back()" value="取消"/>
             </td>
           </tr>
         </table>
       </form>
     </c:when>
     <c:otherwise>
-      <div class="error"><h3>Only admin users allowed</h3></div>
+      <div class="error"><h3>需要管理员权限</h3></div>
     </c:otherwise>
   </c:choose>
 </body>

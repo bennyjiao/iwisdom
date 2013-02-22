@@ -1,9 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Explorer</legend>
+  <legend>浏览器</legend>
   <table>
     <tr>
-      <td>Type filter</td>
+      <td>类型过滤器</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfExplorer.typeFilterEnabled}">

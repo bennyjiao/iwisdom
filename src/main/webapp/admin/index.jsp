@@ -72,7 +72,7 @@
   <c:choose>
     <c:when test="${isAdmin}">
 	  <div id="menu"><%@include file="menu.jsp" %></div>
-	  <div><iframe id="frame" name="frame" src="home.jsp" frameborder="0"></iframe></div>
+	  <div><iframe id="frame" name="frame" src="stats.jsp" frameborder="0"></iframe></div>
     </c:when>
     <c:otherwise>
       <div class="error"><h3>Only admin users allowed</h3></div>
