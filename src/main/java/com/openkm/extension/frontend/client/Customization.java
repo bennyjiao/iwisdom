@@ -66,6 +66,8 @@ public class Customization {
 			extensions.add(new ToolBarBoxExample().getToolBarBox());
 		}
 
+		
+
 //		extensions.add(new MainMenuExample().getNewMenu());
 //		extensions.add(new HandlersTest());		
 		
