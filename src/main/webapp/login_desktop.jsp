@@ -104,15 +104,15 @@ window.attachEvent("onload", correctPNG);
                   <td height="198" align="right" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td width="35%">&nbsp;</td>
-                      <td height="25" colspan="2" class="left_txt"><p>1- 地区商家信息网门户站建立的首选方案...</p></td>
+                      <td height="25" colspan="2" class="left_txt"><p>1- 专业的文档管理系统首选方案...</p></td>
                     </tr>
                     <tr>
                       <td>&nbsp;</td>
-                      <td height="25" colspan="2" class="left_txt"><p>2- 一站通式的整合方式，方便用户使用...</p></td>
+                      <td height="25" colspan="2" class="left_txt"><p>2- 完善的客户服务机制方便用户使用...</p></td>
                     </tr>
                     <tr>
                       <td>&nbsp;</td>
-                      <td height="25" colspan="2" class="left_txt"><p>3- 强大的后台系统，管理内容易如反掌...</p></td>
+                      <td height="25" colspan="2" class="left_txt"><p>3- 强大的底层架构易于企业二次扩展...</p></td>
                     </tr>
                     <tr>
                       <td>&nbsp;</td>
@@ -188,7 +188,7 @@ window.attachEvent("onload", correctPNG);
   <tr>
     <td height="20"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="login-buttom-bg">
       <tr>
-        <td align="center"><span class="login-buttom-txt">Copyright &copy; 2009-2010 www.codefans.net</span></td>
+        <td align="center"><span class="login-buttom-txt">Copyright &copy; 2010-2013 www.i-wisdom.com</span></td>
       </tr>
     </table></td>
   </tr>
