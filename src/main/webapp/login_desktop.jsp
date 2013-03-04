@@ -98,7 +98,7 @@ window.attachEvent("onload", correctPNG);
                   <td height="149">&nbsp;</td>
                 </tr>
                 <tr>
-                  <td height="80" align="right" valign="top"><img src="images/logo.png" width="279" height="68"></td>
+                  <td height="80" align="right" valign="top"><img src="images/logo1.png" width="279" height="68"></td>
                 </tr>
                 <tr>
                   <td height="198" align="right" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
