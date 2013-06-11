@@ -78,7 +78,7 @@ public class RegisterThesaurusServlet extends BaseServlet {
 			KEATree.generateTree(null, level, "/"+Repository.THESAURUS, new Vector<String>(), out);
 			out.println("<br><b>Finished thesaurus creation.</b><br>");
 		} else {
-			out.println("<b>Error - there's no thesaurus file defined in OpenKM.cfg</b>");
+			out.println("<b>Error - there's no thesaurus file defined in iWisdom.cfg</b>");
 		}
 		
 		footer(out);

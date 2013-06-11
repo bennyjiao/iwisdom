@@ -79,7 +79,7 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>
       /WEB-INF/applicationContext.xml
-      file:${catalina.home}/OpenKM.xml
+      file:${catalina.home}/iWisdom.xml
     </param-value>
   </context-param>
   

@@ -65,7 +65,7 @@ public class Config {
 	public static final String STOP_JAR = "stop.jar";
 	
 	// Configuration files
-	public static final String OPENKM_CONFIG = "OpenKM.cfg";
+	public static final String OPENKM_CONFIG = "iWisdom.cfg";
 	public static final String NODE_DEFINITIONS = "CustomNodes.cnd";
 	public static String CONTEXT;
 	public static String INSTANCE_HOME;
@@ -463,7 +463,7 @@ public class Config {
 	}
 		
 	/**
-	 * Load OpenKM configuration from OpenKM.cfg 
+	 * Load OpenKM configuration from iWisdom.cfg 
 	 */
 	public static Properties load(ServletContext sc) {
 		Properties config = new Properties();
