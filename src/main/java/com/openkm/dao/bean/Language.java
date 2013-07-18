@@ -32,7 +32,7 @@ import java.util.Set;
  */
 public class Language implements Serializable {
 	private static final long serialVersionUID = 1L;
-	public static final String DEFAULT = "en-GB";
+	public static final String DEFAULT = "zh-CN";
 	
 	private String id;
 	private String name;

@@ -50,7 +50,7 @@ public class ToolBarButtonExample  {
 	
 	ToolBarButton button;
 	String title = "title";
-	String lang = "en-GB";
+	String lang = "zh_CN";
 
 	public ToolBarButtonExample() {
 		button = new ToolBarButton(new Image(OKMExtensionBundleExampleResources.INSTANCE.box()), title, new ClickHandler() {

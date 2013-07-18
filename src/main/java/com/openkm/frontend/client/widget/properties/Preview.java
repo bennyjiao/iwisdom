@@ -64,14 +64,14 @@ public class Preview extends Composite {
 		hPanel.setCellHeight(space, "10");
 		initWidget(hPanel);
 	}
-	
+	//
 	@Override
 	public void setPixelSize(int width, int height) {
 		super.setPixelSize(width, height);
 		this.width = width;
 		this.height = height;
 	}
-	
+	//
 	/**
 	 * showEmbedSWF
 	 * 

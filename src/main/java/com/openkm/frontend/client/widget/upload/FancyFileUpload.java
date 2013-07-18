@@ -244,7 +244,7 @@ public class FancyFileUpload extends Composite implements HasText, HasChangeHand
 			
 			pendingPanel.setCellHorizontalAlignment(hPBPanel, HasAlignment.ALIGN_CENTER);
 			
-			diclousureFilesPanel = new DisclosurePanel("Cola de pendientes");
+			diclousureFilesPanel = new DisclosurePanel("等待上传的文件");
 			pendingFilePanel = new VerticalPanel();
 			diclousureFilesPanel.add(pendingFilePanel);
 			diclousureFilesPanel.setVisible(false);

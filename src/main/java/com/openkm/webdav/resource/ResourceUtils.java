@@ -155,7 +155,7 @@ public class ResourceUtils {
 		pw.println("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />");
 		pw.println("<link rel=\"Shortcut icon\" href=\"/" + path.getFirst() + "/favicon.ico\" />");
 		pw.println("<link rel=\"stylesheet\" href=\"/" + path.getFirst() + "/css/style.css\" type=\"text/css\" />");
-		pw.println("<title>OpenKM WebDAV</title>");
+		pw.println("<title>iWisdom WebDAV</title>");
 		pw.println("</header>");
 		pw.println("<body>");
 		pw.println("<h1>OpenKM WebDAV</h1>");

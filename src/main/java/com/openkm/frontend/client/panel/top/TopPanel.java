@@ -177,7 +177,7 @@ public class TopPanel extends Composite {
 		horizontalPanelMenu.setCellWidth(quickSearchPanel, "220");
 		horizontalPanelMenu.setCellWidth(logo, "40");
 		panel.setStyleName("okm-TopPanel");
-		panel.addStyleName("okm-DisableSelect");
+		panel.addStyleName("okm-DisableSelect"); 
 		panel.setHorizontalAlignment(VerticalPanel.ALIGN_LEFT);
 		panel.setSize("100%", "100%");
 		panel.add(horizontalPanelMenu);

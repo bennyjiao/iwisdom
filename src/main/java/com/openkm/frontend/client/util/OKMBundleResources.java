@@ -285,7 +285,7 @@ public interface OKMBundleResources extends ClientBundle {
 	
 	@Source("com/openkm/frontend/public/img/icon/quota/quota6.gif")
 	public ImageResource quota6();
-	
+	 
 	@Source("com/openkm/frontend/public/img/logo_openkm_tiny.gif")
 	public ImageResource logoOpenKM();
 	

@@ -438,7 +438,6 @@ public class Util {
 		} else {
 			fpViewer = "../js/flexpaper/FlexPaperViewerRO.swf";
 		}
-		
 		pdfUrl = encodeURIComponent(pdfUrl);
 		$wnd.swfobject.embedSWF(fpViewer, "pdfviewercontainer", width, height, "10.0.0", "playerProductInstall.swf",
                   {
