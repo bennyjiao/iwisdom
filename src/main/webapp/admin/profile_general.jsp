@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>General</legend>
+  <legend>通用配置</legend>
   <table>
     <tr>
       <td>名称</td>

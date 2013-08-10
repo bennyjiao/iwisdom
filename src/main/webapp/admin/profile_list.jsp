@@ -48,19 +48,19 @@
             <td align="center">
               <c:choose>
                 <c:when test="${prf.active}">
-                  <img src="img/true.png" alt="Active" title="Active"/>
+                  <img src="img/true.png" alt="Active" title="激活"/>
                 </c:when>
                 <c:otherwise>
-                  <img src="img/false.png" alt="Inactive" title="Inactive"/>
+                  <img src="img/false.png" alt="Inactive" title="激活中"/>
                 </c:otherwise>
               </c:choose>
             </td>
             <td>
-              <a href="${urlEdit}"><img src="img/action/edit.png" alt="Edit" title="Edit"/></a>
+              <a href="${urlEdit}"><img src="img/action/edit.png" alt="Edit" title="编辑"/></a>
               &nbsp;
-              <a href="${urlDelete}"><img src="img/action/delete.png" alt="Delete" title="Delete"/></a>
+              <a href="${urlDelete}"><img src="img/action/delete.png" alt="Delete" title="删除"/></a>
               &nbsp;
-              <a href="${urlClone}"><img src="img/action/clone.png" alt="Clone" title="Clone"/></a>
+              <a href="${urlClone}"><img src="img/action/clone.png" alt="Clone" title="克隆"/></a>
             </td>
           </tr>
         </c:forEach>

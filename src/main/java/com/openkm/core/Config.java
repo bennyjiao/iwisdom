@@ -193,6 +193,7 @@ public class Config {
 	public static final String PROPERTY_SYSTEM_OPENOFFICE_PORT = "system.openoffice.port";
 	public static final String PROPERTY_SYSTEM_OPENOFFICE_DICTIONARY = "system.openoffice.dictionary";
 	public static final String PROPERTY_SYSTEM_IMAGEMAGICK_CONVERT = "system.imagemagick.convert";
+	public static final String PROPERTY_SYSTEM_ACME_DWG2PDF = "system.acme.dwg2pdf";
 	public static final String PROPERTY_SYSTEM_SWFTOOLS_PDF2SWF = "system.swftools.pdf2swf";
 	public static final String PROPERTY_SYSTEM_GHOSTSCRIPT_PS2PDF = "system.ghostscript.ps2pdf";
 	public static final String PROPERTY_SYSTEM_ANTIVIR = "system.antivir";
@@ -375,6 +376,7 @@ public class Config {
 	public static int SYSTEM_OPENOFFICE_PORT;
 	public static String SYSTEM_OPENOFFICE_DICTIONARY = "";
 	public static String SYSTEM_IMAGEMAGICK_CONVERT = "";
+	public static String SYSTEM_ACME_DWG2PDF = "";
 	public static String SYSTEM_SWFTOOLS_PDF2SWF = "";
 	public static String SYSTEM_GHOSTSCRIPT_PS2PDF = "";
 	public static String SYSTEM_ANTIVIR = "";
@@ -726,6 +728,8 @@ public class Config {
 			values.put(PROPERTY_SYSTEM_PDF_FORCE_OCR, Boolean.toString(SYSTEM_PDF_FORCE_OCR));
 			SYSTEM_IMAGEMAGICK_CONVERT = ConfigDAO.getString(PROPERTY_SYSTEM_IMAGEMAGICK_CONVERT, cfg.getProperty(PROPERTY_SYSTEM_IMAGEMAGICK_CONVERT, ""));
 			values.put(PROPERTY_SYSTEM_IMAGEMAGICK_CONVERT, SYSTEM_IMAGEMAGICK_CONVERT);
+			SYSTEM_ACME_DWG2PDF = ConfigDAO.getString(PROPERTY_SYSTEM_ACME_DWG2PDF, cfg.getProperty(PROPERTY_SYSTEM_ACME_DWG2PDF, ""));
+			values.put(PROPERTY_SYSTEM_ACME_DWG2PDF, SYSTEM_ACME_DWG2PDF);			
 			SYSTEM_SWFTOOLS_PDF2SWF = ConfigDAO.getString(PROPERTY_SYSTEM_SWFTOOLS_PDF2SWF, cfg.getProperty(PROPERTY_SYSTEM_SWFTOOLS_PDF2SWF, ""));
 			values.put(PROPERTY_SYSTEM_SWFTOOLS_PDF2SWF, SYSTEM_SWFTOOLS_PDF2SWF);
 			SYSTEM_GHOSTSCRIPT_PS2PDF = ConfigDAO.getString(PROPERTY_SYSTEM_GHOSTSCRIPT_PS2PDF, cfg.getProperty(PROPERTY_SYSTEM_GHOSTSCRIPT_PS2PDF, ""));

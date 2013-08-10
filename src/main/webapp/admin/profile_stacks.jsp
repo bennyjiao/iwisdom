@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Stacks</legend>
+  <legend>存储</legend>
   <table>
     <tr>
       <td>公共文档</td>
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>知识库</td>
+      <td>知识库</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.thesaurusVisible}">
@@ -81,7 +81,7 @@
       </td>
     </tr>
     <tr>
-      <td>回收站</td>
+      <td>回收站</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfStack.trashVisible}">

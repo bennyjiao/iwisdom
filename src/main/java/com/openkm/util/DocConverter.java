@@ -71,6 +71,7 @@ public class DocConverter {
 	public static ArrayList<String> validImageMagick = new ArrayList<String>();
 	private static ArrayList<String> validGhoscript = new ArrayList<String>();
 	private static ArrayList<String> validInternal = new ArrayList<String>();
+	public static ArrayList<String> validAutoCAD = new ArrayList<String>();
 	private static DocConverter instance = null;
 	private static OfficeManager officeManager = null;
 	
@@ -110,6 +111,9 @@ public class DocConverter {
 		validImageMagick.add("image/svg+xml");
 		validImageMagick.add("image/x-psd");
 		
+		//AUTOCAD
+		validAutoCAD.add("image/vnd.dxf");
+		validAutoCAD.add("image/vnd.dwg");
 		// Internal conversion
 		validInternal.add(MimeTypeConfig.MIME_ZIP);
 	}
@@ -172,7 +176,7 @@ public class DocConverter {
 		log.debug("convertibleToPdf({})", from);
 		boolean ret = false;
 		
-		if (validOpenOffice.contains(from) || validImageMagick.contains(from) || validGhoscript.contains(from)) {
+		if (validOpenOffice.contains(from) || validImageMagick.contains(from) || validGhoscript.contains(from) || validAutoCAD.contains(from)) {
 			ret = true;
 		} else if (!Config.SYSTEM_OPENOFFICE_PATH.equals("") && validOpenOffice.contains(from)) {
 			ret = true;
@@ -180,7 +184,9 @@ public class DocConverter {
 			ret = true;
 		} else if (!Config.SYSTEM_GHOSTSCRIPT_PS2PDF.equals("") && validGhoscript.contains(from)) {
 			ret = true;
-		} else if (validInternal.contains(from)) {
+		} else if (!Config.SYSTEM_ACME_DWG2PDF.equals("") && validGhoscript.contains(from)) {
+			ret = true;
+		}else if (validInternal.contains(from)) {
 			ret = true;
 		}
 		
@@ -339,6 +345,42 @@ public class DocConverter {
 			hm.put("fileOut", output.getPath());
 			String tpl = Config.SYSTEM_IMAGEMAGICK_CONVERT + " ${fileIn}[0] ${fileOut}";
 			cmd = TemplateUtils.replace("SYSTEM_IMAGEMAGICK_CONVERT", tpl, hm);
+			ExecutionResult er = ExecutionUtils.runCmd(cmd);
+			
+			if (er.getExitValue() != 0) {
+				throw new ConversionException(er.getStderr());
+			}
+		} catch (SecurityException e) {
+			throw new ConversionException("Security exception executing command: " + cmd, e);
+    	} catch (InterruptedException e) {
+			throw new ConversionException("Interrupted exception executing command: " + cmd, e);
+    	} catch (IOException e) {
+			throw new ConversionException("IO exception executing command: " + cmd, e);
+		} catch (TemplateException e) {
+			throw new ConversionException("Template exception", e);
+		} finally {
+			IOUtils.closeQuietly(fos);
+		}
+	}
+	
+	/**
+	 * Convert DWG to PDF (for document preview feature).
+	 * 
+	 * [0] => http://www.rubblewebs.co.uk/imagemagick/psd.php 
+	 */
+	public void dwg2pdf(File input, String mimeType, File output) throws ConversionException,
+			DatabaseException, IOException {
+		log.debug("** Convert from {} to PDF **", mimeType);
+		FileOutputStream fos = null;
+		String cmd = null;
+	    
+		try {
+			// Performs conversion
+			HashMap<String, Object> hm = new HashMap<String, Object>();
+			hm.put("fileIn", input.getPath());
+			hm.put("fileOut", output.getPath());
+			String tpl = Config.SYSTEM_ACME_DWG2PDF + " ${fileIn}[0] ${fileOut}";
+			cmd = TemplateUtils.replace("SYSTEM_ACME_DWG2PDF", tpl, hm);
 			ExecutionResult er = ExecutionUtils.runCmd(cmd);
 			
 			if (er.getExitValue() != 0) {

@@ -32,17 +32,17 @@ public class Repository implements Serializable {
 
 	public static final String OKM = "okm";
 	public static final String OKM_URI = "http://www.openkm.org/1.0";
-	public static final String ROOT = "okm:root";
-	public static final String TRASH = "okm:trash";
-	public static final String TEMPLATES = "okm:templates";
-	public static final String THESAURUS = "okm:thesaurus";
-	public static final String CATEGORIES = "okm:categories";
+	public static final String ROOT = "主目录";
+	public static final String TRASH = "回收站";
+	public static final String TEMPLATES = "模板";
+	public static final String THESAURUS = "知识树";
+	public static final String CATEGORIES = "自定义分类";
 	public static final String SYS_CONFIG = "okm:config";
 	public static final String SYS_CONFIG_TYPE = "okm:sysConfig";
 	public static final String SYS_CONFIG_UUID = "okm:uuid";
 	public static final String SYS_CONFIG_VERSION = "okm:version";
-	public static final String PERSONAL = "okm:personal";
-	public static final String MAIL = "okm:mail";
+	public static final String PERSONAL = "个人空间";
+	public static final String MAIL = "邮件";
 	public static final String USER_CONFIG = "okm:config";
 	public static final String USER_CONFIG_TYPE = "okm:userConfig";
 	public static final String LOCK_TOKENS = "okm:lockTokens";

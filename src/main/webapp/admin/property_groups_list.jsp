@@ -16,25 +16,25 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="PropertyGroups">Property groups</a>
+          <a href="PropertyGroups">元数据组</a>
         </li>
         <li class="action">
-          <a href="PropertyGroups?action=register">Register property groups</a>
+          <a href="PropertyGroups?action=register">元数据组注册信息</a>
         </li>
         <li class="action">
-          <a href="PropertyGroups?action=edit">Edit property groups</a>
+          <a href="PropertyGroups?action=edit">修改元数据组</a>
         </li>
       </ul>
       <br/>
         <c:if test="${empty pGroups}">
           <table class="results" width="80%">
-            <tr><th colspan="2">Group label</th><th colspan="3">Group name</th><th colspan="1">Group info</th></tr>
-            <tr><th>Label</th><th>Name</th><th>Width</th><th>Height</th><th>Field</th><th>Others</th></tr>
+            <tr><th colspan="2">元数据组标签</th><th colspan="3">元数据组名称</th><th colspan="1">元数据组信息</th></tr>
+            <tr><th>标签</th><th>名称</th><th>字段宽度 </th><th>字段高度</th><th>字段</th><th>其他</th></tr>
           </table>
         </c:if>
         <c:forEach var="pGroup" items="${pGroups}">
           <table class="results" width="80%">
-            <tr><th colspan="2">Group label</th><th colspan="3">Group name</th><th colspan="1">Group info</th></tr>
+            <tr><th colspan="2">元数据组标签</th><th colspan="3">元数据组名称</th><th colspan="1">元数据组信息</th></tr>
             <tr class="fuzzy">
               <td colspan="2" align="center"><b>${pGroup.key.label}</b></td>
               <td colspan="3" align="center"><b>${pGroup.key.name}</b></td>
@@ -43,7 +43,7 @@
                 <i>ReadOnly</i>: ${pGroup.key.readonly}
               </td>
             </tr>
-            <tr><th>Label</th><th>Name</th><th>Width</th><th>Height</th><th>Field</th><th>Others</th></tr>
+            <tr><th>标签</th><th>名称</th><th>字段宽度 </th><th>字段高度</th><th>字段</th><th>其他</th></tr>
             <c:forEach var="pgForm" items="${pGroup.value}" varStatus="row">
               <tr class="${row.index % 2 == 0 ? 'even' : 'odd'}">
                 <td>${pgForm.label}</td>

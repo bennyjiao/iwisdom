@@ -44,11 +44,13 @@
           <a href="Auth">用户列表</a>
         </li>
         <li class="action">
-          <a href="Auth?action=roleList">权限列表</a>
+          <a href="Auth?action=roleList">用户组列表</a>
         </li>
+        <!-- 
         <li class="action">
           <a href="${messageList}">消息队列</a>
         </li>
+         -->
         <li class="action">
           <a href="LoggedUsers">已登录用户</a>
         </li>
@@ -60,7 +62,7 @@
       <form action="${urlUserList}">
         <table class="form">
           <tr>
-            <td>权限组</td>
+            <td>用户组列表</td>
             <td>
               <select name="roleFilter">
                 <option value=""></option>
@@ -86,13 +88,15 @@
       </form>
       <br/>
       <div style="text-align: center;" id="dest">
+      <!-- 
         <input type="button" id="fumi" value="Force user mail import"/>
+         -->
       </div>
       <br/>
       <table class="results" width="80%">
         <thead>
           <tr>
-            <th>#</th><th>登录名</th><th>用户名</th><th>邮箱地址</th><th>权限组</th><th>描述</th><th width="30px">启用</th><th width="30px">聊天</th>
+            <th>#</th><th>登录名</th><th>用户名</th><th>邮箱地址</th><th>用户组</th><th>描述</th><th width="30px">启用</th><th width="30px">聊天</th>
             <th width="130px">
               <c:url value="Auth" var="urlCreate">
                 <c:param name="action" value="userCreate"/>
@@ -180,10 +184,12 @@
                     &nbsp;
                   </c:if>
                   <a href="${urlConfig}"><img src="img/action/config.png" alt="User config" title="User config"/></a>
+                  <!-- 
                   &nbsp;
                   <a href="${urlMail}"><img src="img/action/email.png" alt="Mail accounts" title="Mail accounts"/></a>
                   &nbsp;
                   <a href="${urlTwitter}"><img src="img/action/twitter.png" alt="Twitter accounts" title="Twitter accounts"/></a>
+                 -->
                 </c:if>
               </td>
             </tr>

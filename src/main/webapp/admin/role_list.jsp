@@ -24,17 +24,17 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="Auth?action=roleList">Role list</a>
+          <a href="Auth?action=roleList">用户组列表</a>
         </li>
         <li class="action">
-          <a href="Auth">User list</a>
+          <a href="Auth">用户列表</a>
         </li>
       </ul>
       <br/>
       <table class="results" width="40%">
         <thead>
           <tr>
-            <th>#</th><th>Id</th><th width="25px">Active</th>
+            <th>#</th><th>组名称</th><th width="25px">激活</th>
             <th width="50px">
               <c:url value="Auth" var="urlCreate">
                 <c:param name="action" value="roleCreate"/>

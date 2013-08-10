@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>菜单</legend>
+  <legend>菜单</legend>
   <table>
     <tr>
       <td>文件</td>
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>编辑</td>
+      <td>编辑</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.editVisible}">
@@ -67,6 +67,7 @@
         </c:choose>
       </td>
     </tr>
+    <!-- 
     <tr>
       <td>帮助</td>
       <td>
@@ -80,5 +81,6 @@
         </c:choose>
       </td>
     </tr>
+     -->
   </table>
 </fieldset>

@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Tab folder</legend>
+  <legend>文件夹面板</legend>
   <table>
     <tr>
       <td>属性</td>

@@ -31,7 +31,7 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="Auth?action=roleList">Role list</a>
+          <a href="Auth?action=roleList">用户组列表</a>
         </li>
         <li class="path">
           <c:choose>
@@ -47,7 +47,7 @@
         <input type="hidden" name="persist" value="${persist}"/>
         <table class="form" width="300px">
           <tr>
-            <td>Id</td>
+            <td>组名</td>
             <td width="100%">
               <c:choose>
                 <c:when test="${action != 'roleCreate'}">
@@ -60,7 +60,7 @@
             </td>
           </tr>
           <tr>
-            <td>Active</td>
+            <td>激活</td>
             <td>
               <c:choose>
                 <c:when test="${rol.active}">
@@ -74,8 +74,8 @@
           </tr>
           <tr>
             <td colspan="2" align="right">
-              <input type="button" onclick="javascript:window.history.back()" value="Cancel"/>
-              <input type="submit" value="Send"/>
+              <input type="button" onclick="javascript:window.history.back()" value="取消"/>
+              <input type="submit" value="确定"/>
             </td>
           </tr>
         </table>

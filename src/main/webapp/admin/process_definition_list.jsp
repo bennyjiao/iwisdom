@@ -39,7 +39,7 @@
       </ul>
       <br/>
       <table class="results" width="90%">
-        <tr><th>流程ID</th><th>流程名称</th><th>Version</th><th width="50px">动作</th></tr>
+        <tr><th>流程ID</th><th>流程名称</th><th>版本</th><th width="50px">动作</th></tr>
         <c:forEach var="pd" items="${processDefinitions}" varStatus="row">
           <c:url value="Workflow" var="urlProcessDefinitionView">
             <c:param name="action" value="processDefinitionView"/>
@@ -66,7 +66,7 @@
               <table>
                 <tr>
                   <td><input class=":required :only_on_blur" type="file" name="definition"/></td>
-                  <td><input type="submit" value="Register process definition"/></td>
+                  <td><input type="submit" value="注册新流程"/></td>
                 </tr>
               </table>
             </form>

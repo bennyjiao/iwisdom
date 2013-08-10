@@ -1,9 +1,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Tab mail</legend>
+  <legend>邮件面板</legend>
   <table>
     <tr>
-      <td>Properties</td>
+      <td>属性</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfMail.propertiesVisible}">
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>View</td>
+      <td>查看</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfMail.previewVisible}">
@@ -29,7 +29,7 @@
       </td>
     </tr>
     <tr>
-      <td>Security</td>
+      <td>安全</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfMail.securityVisible}">
@@ -42,7 +42,7 @@
       </td>
     </tr>
     <tr>
-      <td>Notes</td>
+      <td>备注</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfMail.notesVisible}">

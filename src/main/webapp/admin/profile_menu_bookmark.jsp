@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Menu bookmark</legend>
+  <legend>书签菜单</legend>
   <table>
     <tr>
       <td>管理标签</td>

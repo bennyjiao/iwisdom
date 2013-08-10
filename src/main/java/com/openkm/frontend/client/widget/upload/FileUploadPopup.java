@@ -175,7 +175,7 @@ public class FileUploadPopup extends DialogBox {
 	protected void executeSend() {
 		if (Main.get().mainPanel.bottomPanel.userInfo.isQuotaExceed()) {
 			Main.get().showError("UserQuotaExceed", 
-		             			 new OKMException("OKM-"+ErrorCode.ORIGIN_OKMBrowser + ErrorCode.CAUSE_QuotaExceed, ""));
+		             			 new OKMException("IWisdom-"+ErrorCode.ORIGIN_OKMBrowser + ErrorCode.CAUSE_QuotaExceed, ""));
 		} else {
 			ffUpload.users.setText(ffUpload.notifyPanel.getUsersToNotify());
 			ffUpload.roles.setText(ffUpload.notifyPanel.getRolesToNotify());

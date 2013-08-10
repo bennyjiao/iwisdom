@@ -1,9 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Menu tool</legend>
+  <legend>工具菜单项目</legend>
   <table>
+  <!-- 
     <tr>
-      <td>语言</td>
+      <td>多语言</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.languagesVisible}">
@@ -15,6 +16,7 @@
         </c:choose>
       </td>
     </tr>
+     -->
     <tr>
       <td>皮肤</td>
       <td>
@@ -28,8 +30,9 @@
         </c:choose>
       </td>
     </tr>
+    <!-- 
     <tr>
-      <td>调试</td>
+      <td>调试</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.debugVisible}">
@@ -41,8 +44,9 @@
         </c:choose>
       </td>
     </tr>
+    -->
     <tr>
-      <td>管理</td>
+      <td>管理</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.administrationVisible}">
@@ -54,8 +58,9 @@
         </c:choose>
       </td>
     </tr>
+     
     <tr>
-      <td>首选项</td>
+      <td>用户配置</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfTool.preferencesVisible}">

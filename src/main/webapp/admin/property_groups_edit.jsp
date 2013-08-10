@@ -41,9 +41,9 @@
     <c:when test="${isAdmin}">
       <ul id="breadcrumb">
         <li class="path">
-          <a href="PropertyGroups">Property groups</a>
+          <a href="PropertyGroups">元数据组</a>
         </li>
-        <li class="path">Edit</li>
+        <li class="path">编辑</li>
       </ul>
       <br/>
       <form action="PropertyGroups" method="post">
@@ -57,8 +57,8 @@
           </tr>
           <tr>
             <td align="right">
-              <input type="button" onclick="javascript:window.history.back()" value="Cancel"/>
-              <input type="submit" value="Send"/>
+              <input type="button" onclick="javascript:window.history.back()" value="取消"/>
+              <input type="submit" value="确定"/>
             </td>
           </tr>
         </table>

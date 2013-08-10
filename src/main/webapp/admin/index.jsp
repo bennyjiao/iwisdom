@@ -75,7 +75,7 @@
 	  <div><iframe id="frame" name="frame" src="stats.jsp" frameborder="0"></iframe></div>
     </c:when>
     <c:otherwise>
-      <div class="error"><h3>Only admin users allowed</h3></div>
+      <div class="error"><h3>只允许系统管理员使用！</h3></div>
     </c:otherwise>
   </c:choose>
 </body>

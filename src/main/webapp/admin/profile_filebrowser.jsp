@@ -1,10 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.openkm.com/tags/utils" prefix="u" %>
 <fieldset>
-  <legend>文件浏览</legend>
+  <legend>文件浏览</legend>
   <table>
     <tr>
-      <td>状态</td>
+      <td>状态</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.statusVisible}">
@@ -17,7 +17,7 @@
       </td>
     </tr>
     <tr>
-      <td>Massive</td>
+      <td>元数据</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.massiveVisible}">
@@ -30,7 +30,7 @@
       </td>
     </tr>
     <tr>
-      <td>图标</td>
+      <td>图标</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.iconVisible}">
@@ -56,7 +56,7 @@
       </td>
     </tr>
     <tr>
-      <td>文件大小</td>
+      <td>文件大小</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.sizeVisible}">
@@ -82,7 +82,7 @@
       </td>
     </tr>
     <tr>
-      <td>作者</td>
+      <td>作者</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfFileBrowser.authorVisible}">

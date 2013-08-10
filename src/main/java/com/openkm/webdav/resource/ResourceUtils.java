@@ -158,7 +158,7 @@ public class ResourceUtils {
 		pw.println("<title>iWisdom WebDAV</title>");
 		pw.println("</header>");
 		pw.println("<body>");
-		pw.println("<h1>OpenKM WebDAV</h1>");
+		pw.println("<h1>WebDAV文档浏览</h1>");
 		pw.println("<table>");
 		
 		if (!path.getStripFirst().getStripFirst().isRoot()) {

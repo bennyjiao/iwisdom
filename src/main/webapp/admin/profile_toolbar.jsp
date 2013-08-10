@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <fieldset>
-  <legend>Toolbar</legend>
+  <legend>工具栏</legend>
   <table>
     <tr>
       <td>创建文件夹</td>
@@ -82,7 +82,7 @@
       </td>
     </tr>
     <tr>
-      <td>取消锁定</td>
+      <td>取消锁定</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.unlockVisible}">
@@ -160,7 +160,7 @@
       </td>
     </tr>
     <tr>
-      <td>添加属性组</td>
+      <td>添加属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.addPropertyGroupVisible}">
@@ -186,7 +186,7 @@
       </td>
     </tr>
     <tr>
-      <td>启用工作流</td>
+      <td>启用工作流</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.startWorkflowVisible}">
@@ -264,7 +264,7 @@
       </td>
     </tr>
     <tr>
-      <td>文件上传工具</td>
+      <td>文件拖拽上传</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfToolbar.uploaderVisible}">

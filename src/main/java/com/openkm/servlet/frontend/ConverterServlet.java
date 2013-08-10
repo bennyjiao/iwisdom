@@ -193,6 +193,8 @@ public class ConverterServlet extends OKMHttpServlet {
 						DocConverter.getInstance().img2pdf(cd.file, cd.mimeType, pdfCache);
 					} else if (DocConverter.validOpenOffice.contains(cd.mimeType)) {
 						DocConverter.getInstance().doc2pdf(cd.file, cd.mimeType, pdfCache);
+					} else if (DocConverter.validAutoCAD.contains(cd.mimeType)) {
+						DocConverter.getInstance().dwg2pdf(cd.file, cd.mimeType, pdfCache);
 					} else {
 						throw new NotImplementedException("Conversion from '" + cd.mimeType + "' to PDF not available");
 					}

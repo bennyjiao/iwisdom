@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Menu edit</legend>
+  <legend>编辑菜单</legend>
   <table>
     <tr>
       <td>锁定</td>
@@ -16,7 +16,7 @@
       </td>
     </tr>
     <tr>
-      <td>解锁</td>
+      <td>解锁</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.unlockVisible}">
@@ -146,7 +146,7 @@
       </td>
     </tr>
     <tr>
-      <td>添加属性组</td>
+      <td>添加属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.addPropertyGroupVisible}">
@@ -159,7 +159,7 @@
       </td>
     </tr>
     <tr>
-      <td>删除属性组</td>
+      <td>删除属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.removePropertyGroupVisible}">
@@ -224,7 +224,7 @@
       </td>
     </tr>
     <tr>
-      <td>添加关键字</td>
+      <td>添加关键字</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfEdit.addKeywordVisible}">

@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Menu file</legend>
+  <legend>文件管理菜单项</legend>
   <table>
     <tr>
       <td>创建文件夹</td>
@@ -41,6 +41,7 @@
         </c:choose>
       </td>
     </tr>
+    <!-- 
     <tr>
       <td>Similar documents</td>
       <td>
@@ -67,6 +68,7 @@
         </c:choose>
       </td>
     </tr>
+     -->
     <tr>
       <td>下载</td>
       <td>
@@ -94,7 +96,7 @@
       </td>
     </tr>
     <tr>
-      <td>新建文档</td>
+      <td>添加文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.addDocumentVisible}">
@@ -107,7 +109,7 @@
       </td>
     </tr>
     <tr>
-      <td>清除</td>
+      <td>æ¸é¤</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.purgeVisible}">
@@ -120,7 +122,7 @@
       </td>
     </tr>
     <tr>
-      <td>清除回收站</td>
+      <td>清空</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.purgeTrashVisible}">
@@ -133,7 +135,7 @@
       </td>
     </tr>
     <tr>
-      <td>恢复</td>
+      <td>清空回收站</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.restoreVisible}">
@@ -146,7 +148,7 @@
       </td>
     </tr>
     <tr>
-      <td>启用工作流</td>
+      <td>启动工作流</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.startWorkflowVisible}">
@@ -211,7 +213,7 @@
       </td>
     </tr>
     <tr>
-      <td>按照模板创建</td>
+      <td>使用模板创建文件</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.createFromTemplateVisible}">
@@ -224,7 +226,7 @@
       </td>
     </tr>
     <tr>
-      <td>发送文档链接</td>
+      <td>发送文档连接</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.sendDocumentLinkVisible}">
@@ -237,7 +239,7 @@
       </td>
     </tr>
     <tr>
-      <td>以附件形式发送文档</td>
+      <td>附件形式发送文档</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfMenu.prfFile.sendDocumentAttachmentVisible}">

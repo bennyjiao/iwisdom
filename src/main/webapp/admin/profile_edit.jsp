@@ -66,8 +66,11 @@
             <td valign="top" colspan="2">
               <!-- MISC -->
               <jsp:include page="profile_misc.jsp"/>
+              
               <!-- WIZARD -->
+              <!-- 
               <jsp:include page="profile_wizard.jsp"/>
+               -->
               <!-- PAGINATION -->
               <jsp:include page="profile_explorer.jsp"/>
             </td>
@@ -83,7 +86,9 @@
               <!-- MENU TOOL -->
               <jsp:include page="profile_menu_tool.jsp"/>
               <!-- MENU HELP -->
+              <!-- 
               <jsp:include page="profile_menu_help.jsp"/>
+               -->
             </td>
             <td valign="top">
               <!-- MENU FILE -->

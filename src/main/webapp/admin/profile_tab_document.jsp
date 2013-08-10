@@ -1,6 +1,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <fieldset>
-  <legend>Tab document</legend>
+  <legend>文档面板</legend>
   <table>
     <tr>
       <td>属性</td>
@@ -81,7 +81,7 @@
       </td>
     </tr>
     <tr>
-      <td>属性组</td>
+      <td>属性组</td>
       <td>
         <c:choose>
           <c:when test="${prf.prfTab.prfDocument.propertyGroupsVisible}">

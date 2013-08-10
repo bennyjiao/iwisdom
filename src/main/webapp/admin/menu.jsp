@@ -5,43 +5,43 @@
 <!-- http://stackoverflow.com/questions/1708054/center-ul-li-into-div -->
 <div style="text-align: center">
   <ul style="display: inline-block;">
-    <li style="display:none;">
-      <a target="frame" href="home.jsp" title="首页">
+    <li >
+      <a target="frame" href="home.jsp" title="管理首页">
         <img src="img/toolbar/home.png">
       </a>
     </li>
     <li style="display:none;">
-      <a target="frame" href="Config"  title="配置">
+      <a target="frame" href="Config"  title="系统参数配置">
         <img src="img/toolbar/config.png">
       </a>
     </li>
     <li style="display:none;">
-      <a target="frame" href="MimeType" title="媒体类型">
+      <a target="frame" href="MimeType" title="Mime类型管理">
         <img src="img/toolbar/mime.png">
       </a>
     </li>
     <li>
-      <a target="frame" href="stats.jsp" title="状态">
+      <a target="frame" href="stats.jsp" title="系统状态">
         <img src="img/toolbar/stats.png">
       </a>
     </li>
     <li style="display:none;">
-      <a target="frame" href="scripting.jsp" title="脚本">
+      <a target="frame" href="scripting.jsp" title="执行脚本">
         <img src="img/toolbar/scripting.png">
       </a>
     </li>
     <li>
-      <a target="frame" href="PropertyGroups" title="源数据">
+      <a target="frame" href="PropertyGroups" title="元数据">
         <img src="img/toolbar/properties.png">
       </a>
     </li>
     <li>
-      <a target="frame" href="Auth" title="用户">
+      <a target="frame" href="Auth" title="用户管理">
         <img src="img/toolbar/users.png">
       </a>
     </li>
     <li>
-      <a target="frame" href="Profile"  title="权限">
+      <a target="frame" href="Profile"  title="权限管理">
         <img src="img/toolbar/profile.png">
       </a>
     </li>
@@ -56,12 +56,12 @@
       </a>
     </li>
     <li style="display:none;">
-      <a target="frame" href="ActivityLog" title="日志">
+      <a target="frame" href="ActivityLog" title="日志">
         <img src="img/toolbar/activity.png">
       </a>
     </li>
-    <li style="display:none;">
-      <a target="frame" href="Workflow" title="工作流">
+    <li >
+      <a target="frame" href="Workflow" title="工作流">
         <img src="img/toolbar/workflow.png">
       </a>
     </li>
@@ -76,26 +76,26 @@
       </a>
     </li>
     <li style="display:none;">
-      <a target="frame" href="generate_thesaurus.jsp" title="Thesaurus">
+      <a target="frame" href="generate_thesaurus.jsp" title="知识树">
         <img src="img/toolbar/thesaurus.png">
       </a>
     </li>
-    <li>
-      <a target="frame" href="Language" title="语言">
+    <li style="display:none;">
+      <a target="frame" href="Language" title="多语言">
         <img src="img/toolbar/language.png">
       </a>
     </li>
     <li>
-      <a target="frame" href="repository_import.jsp" title="导入">
+      <a target="frame" href="repository_import.jsp" title="批量导入">
         <img src="img/toolbar/import.png">
       </a>
     </li>
     <li>
-      <a target="frame" href="repository_export.jsp" title="导出">
+      <a target="frame" href="repository_export.jsp" title="批量导出">
         <img src="img/toolbar/export.png">
        </a>
     </li>
-    <li style="display:none;">
+    <li >
       <a target="frame" href="utilities.jsp" title="工具">
         <img src="img/toolbar/utilities.png">
        </a>
